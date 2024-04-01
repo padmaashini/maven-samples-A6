@@ -12,7 +12,7 @@ pipeline {
     }
     stage('clean install') {
       steps {
-        sh 'mvn clean install'
+        sh 'mvn clean'
       }
     }
     stage('git bisect') {
